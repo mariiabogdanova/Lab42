@@ -19,10 +19,20 @@ private $amount; //Amount in storage
     }
 
 
+     public function changePrice($newPrice) {
+     	$this->product = $newPrice;
+     }
+
     } 
  
 $product = new Product("Edam", 3.3, 120); 
 printf("Product value is %4.1f", $product->countValue()); 
 echo "<br>"; $product->printProduct(); 
+
+
+
+
 $product->changeAmount(245);
+$product->changePrice(4.1);
+
 ?>
